@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M8-nm-PsU">
+                                <rect key="frame" x="175" y="320" width="64" height="96"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="24"/>
+                                <state key="normal" title="A ♣︎ " backgroundImage="cardfront">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="320" width="64" height="96"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="186" y="328" width="64" height="96"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="316" y="159" width="64" height="96"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YTU-eX-Yug"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iL-Ho-t7I">
+                                <rect key="frame" x="166" y="424" width="83" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4iL-Ho-t7I" secondAttribute="centerX" constant="-9.5" id="4du-As-XwN"/>
+                            <constraint firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" constant="-8" id="CLi-GN-hu3"/>
+                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="10" id="FIu-Yf-qn4"/>
+                            <constraint firstAttribute="centerY" secondItem="4iL-Ho-t7I" secondAttribute="centerY" constant="-80" id="Hma-ob-qb1"/>
+                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="-11" id="Nja-W6-Eii"/>
+                            <constraint firstAttribute="centerY" secondItem="4iL-Ho-t7I" secondAttribute="centerY" constant="-80" id="W0e-8S-v8K"/>
+                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" id="djp-dj-IfY"/>
+                            <constraint firstAttribute="centerX" secondItem="4iL-Ho-t7I" secondAttribute="centerX" id="ga3-1Q-sfi"/>
+                            <constraint firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" id="wV9-v3-isj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CLi-GN-hu3"/>
+                                <exclude reference="Nja-W6-Eii"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CLi-GN-hu3"/>
+                                <include reference="Nja-W6-Eii"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="flipsLabel" destination="4iL-Ho-t7I" id="YWt-RH-bK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="364"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardfront" width="59" height="89"/>
+    </resources>
+</document>
