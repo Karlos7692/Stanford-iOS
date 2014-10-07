@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -16,28 +16,514 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M8-nm-PsU">
-                                <rect key="frame" x="175" y="320" width="64" height="96"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="24"/>
-                                <state key="normal" title="A ♣︎ " backgroundImage="cardfront">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M8-nm-PsU">
+                                <rect key="frame" x="62" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="38y-t9-Igw"/>
+                                    <constraint firstAttribute="width" constant="40" id="Jb7-Um-ftN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="175" y="320" width="64" height="96"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="186" y="328" width="64" height="96"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="316" y="159" width="64" height="96"/>
-                                </variation>
                                 <connections>
-                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YTU-eX-Yug"/>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tkg-t5-3dk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iL-Ho-t7I">
-                                <rect key="frame" x="166" y="424" width="83" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfJ-zk-IkW">
+                                <rect key="frame" x="110" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1ek-2Y-8tU"/>
+                                    <constraint firstAttribute="width" constant="40" id="21w-dN-5C5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RrK-hj-48k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-Ko-anV">
+                                <rect key="frame" x="158" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Iw6-ES-ldF"/>
+                                    <constraint firstAttribute="height" constant="60" id="Psv-bC-WQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RaD-k6-DFx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvV-hf-uVS">
+                                <rect key="frame" x="206" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WxF-2u-izT"/>
+                                    <constraint firstAttribute="width" constant="40" id="zMN-5m-341"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dx8-Ux-Ftf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq5-TT-2CN">
+                                <rect key="frame" x="254" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6U9-zx-gLd"/>
+                                    <constraint firstAttribute="height" constant="60" id="rWg-9n-bkc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cNW-yG-kUd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trp-PL-YIA">
+                                <rect key="frame" x="62" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="A6t-3Z-Uni"/>
+                                    <constraint firstAttribute="height" constant="60" id="MF1-Rb-Q66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ack-HL-OVz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hV-5G-Byt">
+                                <rect key="frame" x="158" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="MD1-56-TMP"/>
+                                    <constraint firstAttribute="height" constant="60" id="V8l-jJ-oF5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Ac-yV-x8i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjL-Fk-fDE">
+                                <rect key="frame" x="206" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="YRG-gf-YEP"/>
+                                    <constraint firstAttribute="height" constant="60" id="zJc-vP-uph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ivh-uL-Rcd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfQ-fa-VIc">
+                                <rect key="frame" x="254" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="H4c-HC-Ymq"/>
+                                    <constraint firstAttribute="width" constant="40" id="XYc-Yg-cfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8XV-jr-zBB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-M5-qYE">
+                                <rect key="frame" x="302" y="177" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="77C-YA-Pbh"/>
+                                    <constraint firstAttribute="height" constant="60" id="fqB-Vc-64H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lc9-jN-cyT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-Ub-Ucv">
+                                <rect key="frame" x="302" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Awn-bx-x4h"/>
+                                    <constraint firstAttribute="width" constant="40" id="BpO-W1-EMh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aeD-22-PSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koU-aE-GlB">
+                                <rect key="frame" x="110" y="245" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1m5-PG-dyR"/>
+                                    <constraint firstAttribute="height" constant="60" id="DTc-6N-mW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X2P-ij-3SI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sah-zr-js1">
+                                <rect key="frame" x="62" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Cdc-D9-2FF"/>
+                                    <constraint firstAttribute="height" constant="60" id="o48-dG-puK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zbv-NT-EW0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-OV-yYG">
+                                <rect key="frame" x="110" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6au-B8-WtQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="P5q-GA-LWr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fog-5b-CQf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6D-WG-UWn">
+                                <rect key="frame" x="158" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6uM-ef-RUC"/>
+                                    <constraint firstAttribute="width" constant="40" id="KnS-Wh-ESP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a6O-hM-gKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJe-i9-E9t">
+                                <rect key="frame" x="206" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2Az-Yr-Dmd"/>
+                                    <constraint firstAttribute="width" constant="40" id="42v-qm-nSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jTa-PS-Wj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-g9-NA8">
+                                <rect key="frame" x="254" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ftv-Pq-qnw"/>
+                                    <constraint firstAttribute="height" constant="60" id="qOO-cO-e3d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Puw-3M-E1i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGt-Lg-Zv7">
+                                <rect key="frame" x="62" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="8b0-8Z-oDM"/>
+                                    <constraint firstAttribute="height" constant="60" id="TME-N9-vWt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B5k-y6-vwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZr-vb-Z5e">
+                                <rect key="frame" x="158" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ak3-a4-d6S"/>
+                                    <constraint firstAttribute="width" constant="40" id="fuU-4k-Rvx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sLY-0w-RvB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyg-2P-vcB">
+                                <rect key="frame" x="206" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Qsb-AV-nwc"/>
+                                    <constraint firstAttribute="height" constant="60" id="frh-hN-6ws"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p52-dr-XRF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYc-Xq-oAm">
+                                <rect key="frame" x="254" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="PEc-tI-L65"/>
+                                    <constraint firstAttribute="height" constant="60" id="oe0-Ec-AKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BQv-TJ-jcC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myg-UI-Yy3">
+                                <rect key="frame" x="302" y="313" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="aO6-gb-eEN"/>
+                                    <constraint firstAttribute="height" constant="60" id="iNP-Ol-Fh0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="POR-GU-AY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxj-cY-ZDE">
+                                <rect key="frame" x="302" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6AN-IB-VUX"/>
+                                    <constraint firstAttribute="width" constant="40" id="y3k-o3-DqS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A2z-Iq-NIM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfO-Zm-Wna">
+                                <rect key="frame" x="110" y="381" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BWJ-HO-qGl"/>
+                                    <constraint firstAttribute="width" constant="40" id="oNB-wN-eeD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K2P-7V-YY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qW3-KY-i2T">
+                                <rect key="frame" x="62" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SrV-DG-OBx"/>
+                                    <constraint firstAttribute="height" constant="60" id="uKO-AA-vLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="36I-oM-JwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfY-rO-boF">
+                                <rect key="frame" x="158" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="evp-B0-JiU"/>
+                                    <constraint firstAttribute="width" constant="40" id="lQq-4N-1k1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UQh-17-C4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-cN-VQw">
+                                <rect key="frame" x="206" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="UdY-dV-3b2"/>
+                                    <constraint firstAttribute="height" constant="60" id="wEJ-6X-sub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fmr-kV-PZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7d-ym-4Te">
+                                <rect key="frame" x="254" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="a5y-pL-qWI"/>
+                                    <constraint firstAttribute="width" constant="40" id="jH2-NT-oku"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AAG-za-aPz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMV-h7-COA">
+                                <rect key="frame" x="302" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Whc-Oe-6gE"/>
+                                    <constraint firstAttribute="width" constant="40" id="ZSx-5Q-9Z7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QAC-oP-xai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPN-Ni-U0o">
+                                <rect key="frame" x="110" y="449" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7uE-8J-bXx"/>
+                                    <constraint firstAttribute="width" constant="40" id="ayh-m0-RzA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pvf-T4-jHz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRi-Ti-Rc3">
+                                <rect key="frame" x="140" y="524" width="124" height="32"/>
+                                <color key="backgroundColor" red="0.94353630369999997" green="0.96504882260000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Nk3-Qc-yiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.85694355867346939" green="0.092593804025561818" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.94353630369999997" green="0.96504882260000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cg9-Cm-V0r"/>
+                                </connections>
+                            </button>
+                            <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DRq-DS-UX3">
+                                <rect key="frame" x="62" y="138" width="280" height="29"/>
+                                <color key="backgroundColor" red="0.94318181818181823" green="0.96508532419901139" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="1oo-qb-5WQ"/>
+                                    <constraint firstAttribute="width" constant="280" id="uPd-jU-TBd"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2-card-match mode"/>
+                                    <segment title="3-card-match mode"/>
+                                </segments>
+                                <color key="tintColor" red="0.77040816326530615" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="chooseGameMode:" destination="vXZ-lx-hvc" eventType="valueChanged" id="paF-3J-MMW"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matchismo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW8-qV-bht">
+                                <rect key="frame" x="114" y="98" width="186" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="h7S-th-N2w"/>
+                                    <constraint firstAttribute="width" constant="186" id="u7U-ZX-YSn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.94353630369999997" green="0.96504882260000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LJ-eh-9Un">
+                                <rect key="frame" x="134" y="607" width="136" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="9jy-jU-9UR"/>
+                                    <constraint firstAttribute="width" constant="136" id="A2W-2F-kEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Game by touching a card." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-mc-gWb">
+                                <rect key="frame" x="62" y="564" width="280" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2Yp-46-fS4"/>
+                                    <constraint firstAttribute="width" constant="280" id="buH-s3-zg9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,40 +531,301 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="4iL-Ho-t7I" secondAttribute="centerX" constant="-9.5" id="4du-As-XwN"/>
-                            <constraint firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" constant="-8" id="CLi-GN-hu3"/>
-                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="10" id="FIu-Yf-qn4"/>
-                            <constraint firstAttribute="centerY" secondItem="4iL-Ho-t7I" secondAttribute="centerY" constant="-80" id="Hma-ob-qb1"/>
-                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="-11" id="Nja-W6-Eii"/>
-                            <constraint firstAttribute="centerY" secondItem="4iL-Ho-t7I" secondAttribute="centerY" constant="-80" id="W0e-8S-v8K"/>
-                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" id="djp-dj-IfY"/>
-                            <constraint firstAttribute="centerX" secondItem="4iL-Ho-t7I" secondAttribute="centerX" id="ga3-1Q-sfi"/>
-                            <constraint firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" id="wV9-v3-isj"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="SV3-Ub-Ucv" secondAttribute="leading" constant="-144" id="069-l8-RYy"/>
+                            <constraint firstAttribute="centerX" secondItem="sRi-Ti-Rc3" secondAttribute="centerX" constant="5" id="09S-aH-iQZ"/>
+                            <constraint firstAttribute="centerX" secondItem="C3W-mc-gWb" secondAttribute="centerX" constant="5" id="0IT-Sh-uun"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="YmF-M5-qYE" secondAttribute="centerX" constant="-144" id="1IT-Vd-EU9"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="CfQ-fa-VIc" secondAttribute="trailing" constant="-96" id="1Sk-IR-pUq"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="YmF-M5-qYE" secondAttribute="leading" constant="-144" id="1bf-He-STQ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="myg-UI-Yy3" secondAttribute="leading" constant="-144" id="1rr-90-d2C"/>
+                            <constraint firstAttribute="centerX" secondItem="DRq-DS-UX3" secondAttribute="centerX" constant="5" id="2Ku-VQ-443"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Lno-cN-VQw" secondAttribute="top" constant="-204" id="32C-jn-UW2"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="s7d-ym-4Te" secondAttribute="leading" constant="-96" id="3Bv-IY-duR"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="AvV-hf-uVS" secondAttribute="leading" constant="-48" id="3ac-nC-s0L"/>
+                            <constraint firstAttribute="centerX" secondItem="Mxj-cY-ZDE" secondAttribute="centerX" constant="-115" id="3b1-Pa-lcG"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="myg-UI-Yy3" secondAttribute="centerX" constant="-144" id="4Mm-sH-k41"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="trp-PL-YIA" secondAttribute="bottom" id="4RL-if-v9L"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="trp-PL-YIA" secondAttribute="centerX" constant="96" id="4k0-cd-hEK"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Mxj-cY-ZDE" secondAttribute="top" constant="-136" id="4sL-ZN-dDW"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="qW3-KY-i2T" secondAttribute="top" constant="-204" id="54L-9k-Sp4"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Lno-cN-VQw" secondAttribute="trailing" constant="-48" id="54v-Vc-PoJ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="XfJ-zk-IkW" secondAttribute="top" constant="68" id="5a8-P4-R74"/>
+                            <constraint firstAttribute="centerX" secondItem="YmF-M5-qYE" secondAttribute="centerX" constant="-115" id="5oU-k3-B6G"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="CfQ-fa-VIc" secondAttribute="leading" constant="-96" id="5zF-WX-Fzu"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="JfY-rO-boF" secondAttribute="centerX" id="6u2-9V-pKa"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="fMV-h7-COA" secondAttribute="centerX" constant="-144" id="6uQ-4B-URv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="trp-PL-YIA" secondAttribute="leading" constant="96" id="7CS-ML-ymU"/>
+                            <constraint firstAttribute="centerY" secondItem="MYc-Xq-oAm" secondAttribute="centerY" constant="-43" id="7Qh-oN-8kM"/>
+                            <constraint firstAttribute="centerY" secondItem="Zyg-2P-vcB" secondAttribute="centerY" constant="-43" id="7VM-Wu-hjU"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="SV3-Ub-Ucv" secondAttribute="trailing" constant="-144" id="88b-88-QZC"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="qJe-i9-E9t" secondAttribute="centerX" constant="-48" id="91u-Mh-nRC"/>
+                            <constraint firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" constant="161" id="9Fx-iS-ydw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="9M8-nm-PsU" secondAttribute="leading" constant="96" id="9LR-gK-ewA"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="UfO-Zm-Wna" secondAttribute="trailing" constant="48" id="9W7-mA-zH3"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Xq5-TT-2CN" secondAttribute="bottom" constant="68" id="Aia-St-FLa"/>
+                            <constraint firstAttribute="centerY" secondItem="Xq5-TT-2CN" secondAttribute="centerY" constant="161" id="Aj4-HN-se5"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Lno-cN-VQw" secondAttribute="centerY" constant="-204" id="AjI-Iv-UbI"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="LPN-Ni-U0o" secondAttribute="bottom" constant="-204" id="BB5-wU-t4P"/>
+                            <constraint firstAttribute="centerY" secondItem="CfQ-fa-VIc" secondAttribute="centerY" constant="93" id="BUc-bZ-n9R"/>
+                            <constraint firstAttribute="centerX" secondItem="Bac-Ko-anV" secondAttribute="centerX" constant="29" id="BaA-x0-JFf"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="CfQ-fa-VIc" secondAttribute="centerY" id="Bh1-XW-0LI"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="KZr-vb-Z5e" secondAttribute="bottom" constant="-136" id="Bmf-15-Kqu"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="SSr-g9-NA8" secondAttribute="trailing" constant="-96" id="Bqu-0a-N6D"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="XfJ-zk-IkW" secondAttribute="leading" constant="48" id="BxK-iQ-Nnw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Mxj-cY-ZDE" secondAttribute="trailing" constant="-144" id="Bzg-g3-RMm"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="qJe-i9-E9t" secondAttribute="bottom" constant="-68" id="CDE-fa-NV0"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="D7S-OV-yYG" secondAttribute="centerX" constant="48" id="CMB-zE-9aE"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="trp-PL-YIA" secondAttribute="top" id="DDC-fS-V36"/>
+                            <constraint firstAttribute="centerX" secondItem="SV3-Ub-Ucv" secondAttribute="centerX" constant="-115" id="DP0-AM-D9J"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="LPN-Ni-U0o" secondAttribute="centerX" constant="48" id="Djo-Jp-S8J"/>
+                            <constraint firstAttribute="centerY" secondItem="Y6D-WG-UWn" secondAttribute="centerY" constant="25" id="Dsc-g5-3xu"/>
+                            <constraint firstAttribute="centerY" secondItem="koU-aE-GlB" secondAttribute="centerY" constant="93" id="DzJ-u8-P96"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="MYc-Xq-oAm" secondAttribute="trailing" constant="-96" id="EPD-2E-qc9"/>
+                            <constraint firstAttribute="centerX" secondItem="XfJ-zk-IkW" secondAttribute="centerX" constant="77" id="ETc-nE-r2c"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="tGt-Lg-Zv7" secondAttribute="leading" constant="96" id="EsK-Uw-B5L"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="SSr-g9-NA8" secondAttribute="bottom" constant="-68" id="FNq-di-mOk"/>
+                            <constraint firstAttribute="centerY" secondItem="qJe-i9-E9t" secondAttribute="centerY" constant="25" id="FlU-dm-49B"/>
+                            <constraint firstAttribute="centerX" secondItem="UfO-Zm-Wna" secondAttribute="centerX" constant="77" id="GLA-cA-aeg"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="CfQ-fa-VIc" secondAttribute="bottom" id="GO8-wM-mJc"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="D7S-OV-yYG" secondAttribute="trailing" constant="48" id="Gj8-yE-Kl3"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="9M8-nm-PsU" secondAttribute="centerY" constant="68" id="HCc-gM-qbC"/>
+                            <constraint firstAttribute="centerY" secondItem="SSr-g9-NA8" secondAttribute="centerY" constant="25" id="HEe-lh-0vQ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="UfO-Zm-Wna" secondAttribute="leading" constant="48" id="HVl-3C-HV2"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="koU-aE-GlB" secondAttribute="leading" constant="48" id="Hvc-Mk-VEX"/>
+                            <constraint firstAttribute="centerX" secondItem="AvV-hf-uVS" secondAttribute="centerX" constant="-19" id="IJF-1X-ejP"/>
+                            <constraint firstAttribute="centerX" secondItem="tGt-Lg-Zv7" secondAttribute="centerX" constant="125" id="IVv-dW-jfD"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="UfO-Zm-Wna" secondAttribute="centerX" constant="48" id="IxU-GL-HmC"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="SV3-Ub-Ucv" secondAttribute="centerX" constant="-144" id="Iza-vO-F0o"/>
+                            <constraint firstAttribute="centerX" secondItem="sah-zr-js1" secondAttribute="centerX" constant="125" id="J1F-mb-BcD"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Y6D-WG-UWn" secondAttribute="centerX" id="JIX-l5-ikT"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Y6D-WG-UWn" secondAttribute="centerY" constant="-68" id="JRV-nL-yBx"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Bac-Ko-anV" secondAttribute="bottom" constant="68" id="JTe-5h-uNv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="CfQ-fa-VIc" secondAttribute="top" id="Jgb-qe-6Vs"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="sah-zr-js1" secondAttribute="leading" constant="96" id="Jr7-dn-cpm"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="MYc-Xq-oAm" secondAttribute="bottom" constant="-136" id="KWJ-m6-9R2"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="XfJ-zk-IkW" secondAttribute="bottom" constant="68" id="Kld-2L-6VJ"/>
+                            <constraint firstAttribute="centerX" secondItem="KZr-vb-Z5e" secondAttribute="centerX" constant="29" id="Kv9-gf-Jxx"/>
+                            <constraint firstAttribute="centerY" secondItem="fjL-Fk-fDE" secondAttribute="centerY" constant="93" id="KyE-Hp-7JX"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="SSr-g9-NA8" secondAttribute="top" constant="-68" id="Led-v0-hjo"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="XfJ-zk-IkW" secondAttribute="centerY" constant="68" id="LfW-yh-oPU"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="myg-UI-Yy3" secondAttribute="centerY" constant="-68" id="M4y-I9-9oC"/>
+                            <constraint firstAttribute="centerX" secondItem="trp-PL-YIA" secondAttribute="centerX" constant="125" id="MCi-bV-V3N"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="9M8-nm-PsU" secondAttribute="trailing" constant="96" id="MEH-bW-Kag"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="AvV-hf-uVS" secondAttribute="centerX" constant="-48" id="MNk-lP-mNA"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="qW3-KY-i2T" secondAttribute="bottom" constant="-204" id="MSK-d0-e1O"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="koU-aE-GlB" secondAttribute="bottom" id="Me7-TG-E4B"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="qJe-i9-E9t" secondAttribute="trailing" constant="-48" id="Mgd-cF-wlh"/>
+                            <constraint firstAttribute="centerX" secondItem="JfY-rO-boF" secondAttribute="centerX" constant="29" id="MoP-aq-ImP"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="AvV-hf-uVS" secondAttribute="bottom" constant="68" id="Mqi-2E-jlz"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="JfY-rO-boF" secondAttribute="centerY" constant="-204" id="N3l-jn-tZX"/>
+                            <constraint firstAttribute="centerX" secondItem="fMV-h7-COA" secondAttribute="centerX" constant="-115" id="NCh-yf-hAQ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Mxj-cY-ZDE" secondAttribute="centerX" constant="-144" id="NNk-2m-Qz8"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="koU-aE-GlB" secondAttribute="trailing" constant="48" id="NkD-BL-NDW"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="AvV-hf-uVS" secondAttribute="centerY" constant="68" id="O2U-CE-pY7"/>
+                            <constraint firstAttribute="centerY" secondItem="nW8-qV-bht" secondAttribute="centerY" constant="250.5" id="O2m-jV-7nq"/>
+                            <constraint firstAttribute="centerY" secondItem="fMV-h7-COA" secondAttribute="centerY" constant="-111" id="OB3-wc-ySD"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Zyg-2P-vcB" secondAttribute="centerY" constant="-136" id="OGJ-yG-7Sc"/>
+                            <constraint firstAttribute="centerX" secondItem="fjL-Fk-fDE" secondAttribute="centerX" constant="-19" id="ORg-QI-Ign"/>
+                            <constraint firstAttribute="centerY" secondItem="LPN-Ni-U0o" secondAttribute="centerY" constant="-111" id="Oh1-h1-iIj"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="sah-zr-js1" secondAttribute="centerY" constant="-68" id="Oq0-qO-dcG"/>
+                            <constraint firstAttribute="centerY" secondItem="tGt-Lg-Zv7" secondAttribute="centerY" constant="-43" id="PFB-7D-cDd"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="LPN-Ni-U0o" secondAttribute="trailing" constant="48" id="PMX-u3-lCs"/>
+                            <constraint firstAttribute="centerY" secondItem="sah-zr-js1" secondAttribute="centerY" constant="25" id="PYp-WO-FNH"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Zyg-2P-vcB" secondAttribute="centerX" constant="-48" id="QiY-lX-nyI"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Zyg-2P-vcB" secondAttribute="top" constant="-136" id="QtX-IV-o5K"/>
+                            <constraint firstAttribute="centerY" secondItem="sRi-Ti-Rc3" secondAttribute="centerY" constant="-172" id="R3F-fw-i0L"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="KZr-vb-Z5e" secondAttribute="trailing" id="Ro4-mC-4Oo"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="YmF-M5-qYE" secondAttribute="centerY" constant="68" id="Rrh-wI-lIn"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="YmF-M5-qYE" secondAttribute="bottom" constant="68" id="S2W-ns-n3P"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="D7S-OV-yYG" secondAttribute="bottom" constant="-68" id="SDv-jA-RCq"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="fjL-Fk-fDE" secondAttribute="trailing" constant="-48" id="SPc-W8-WeH"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="AvV-hf-uVS" secondAttribute="top" constant="68" id="ShT-oV-SaS"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="XfJ-zk-IkW" secondAttribute="centerX" constant="48" id="SpV-iR-JZJ"/>
+                            <constraint firstAttribute="centerY" secondItem="Bac-Ko-anV" secondAttribute="centerY" constant="161" id="SxZ-Rr-Zci"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="KZr-vb-Z5e" secondAttribute="centerX" id="T5o-Dl-glm"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="KZr-vb-Z5e" secondAttribute="centerY" constant="-136" id="TC2-pu-x8M"/>
+                            <constraint firstAttribute="centerY" secondItem="KZr-vb-Z5e" secondAttribute="centerY" constant="-43" id="TEV-0A-sJU"/>
+                            <constraint firstAttribute="centerX" secondItem="Zyg-2P-vcB" secondAttribute="centerX" constant="-19" id="TFh-ZB-Pj6"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="s7d-ym-4Te" secondAttribute="top" constant="-204" id="TIh-Zy-tnq"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Xq5-TT-2CN" secondAttribute="leading" constant="-96" id="TTK-pr-FZc"/>
+                            <constraint firstAttribute="centerY" secondItem="XfJ-zk-IkW" secondAttribute="centerY" constant="161" id="Thf-xk-bUw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="s7d-ym-4Te" secondAttribute="trailing" constant="-96" id="ToE-sO-zwl"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="9M8-nm-PsU" secondAttribute="top" constant="68" id="U9o-QK-KWw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="qJe-i9-E9t" secondAttribute="leading" constant="-48" id="UDH-9K-UyT"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="D7S-OV-yYG" secondAttribute="leading" constant="48" id="UQd-0a-s8O"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="trp-PL-YIA" secondAttribute="trailing" constant="96" id="UoH-MT-bZD"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="s7d-ym-4Te" secondAttribute="centerX" constant="-96" id="UsZ-go-7iZ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Bac-Ko-anV" secondAttribute="top" constant="68" id="V6n-pC-7xv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Y6D-WG-UWn" secondAttribute="trailing" id="Vng-Wb-F9e"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="UfO-Zm-Wna" secondAttribute="bottom" constant="-136" id="VqF-lv-QvE"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Mxj-cY-ZDE" secondAttribute="leading" constant="-144" id="VxU-vH-atk"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Zyg-2P-vcB" secondAttribute="leading" constant="-48" id="W0G-1R-2zr"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="fjL-Fk-fDE" secondAttribute="leading" constant="-48" id="XoL-Bx-L5j"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="JfY-rO-boF" secondAttribute="bottom" constant="-204" id="YN5-tA-S9K"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="MYc-Xq-oAm" secondAttribute="top" constant="-136" id="YeT-gP-W3Z"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Bac-Ko-anV" secondAttribute="leading" id="Z8E-lA-ucc"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="qW3-KY-i2T" secondAttribute="centerY" constant="-204" id="ZAD-LC-ibH"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Bac-Ko-anV" secondAttribute="centerX" id="ZCI-WN-abX"/>
+                            <constraint firstAttribute="centerY" secondItem="myg-UI-Yy3" secondAttribute="centerY" constant="25" id="ZdX-dZ-KK5"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="sah-zr-js1" secondAttribute="bottom" constant="-68" id="Zvo-qC-VdN"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Zyg-2P-vcB" secondAttribute="trailing" constant="-48" id="aD0-Dy-SLY"/>
+                            <constraint firstAttribute="centerY" secondItem="YmF-M5-qYE" secondAttribute="centerY" constant="161" id="aRO-kb-OUR"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="D7S-OV-yYG" secondAttribute="top" constant="-68" id="aqd-WJ-yvy"/>
+                            <constraint firstAttribute="centerX" secondItem="Lno-cN-VQw" secondAttribute="centerX" constant="-19" id="b4H-lt-jyY"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Xq5-TT-2CN" secondAttribute="top" constant="68" id="b9u-8b-fuK"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="KZr-vb-Z5e" secondAttribute="leading" id="bIB-8x-eLX"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="fjL-Fk-fDE" secondAttribute="centerX" constant="-48" id="bdL-Ig-84k"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="s7d-ym-4Te" secondAttribute="bottom" constant="-204" id="bdQ-1U-NEX"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Xq5-TT-2CN" secondAttribute="trailing" constant="-96" id="bdu-Hc-qrG"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="SV3-Ub-Ucv" secondAttribute="top" id="bjP-m5-bTp"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="SSr-g9-NA8" secondAttribute="centerX" constant="-96" id="bns-zy-pAU"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="sah-zr-js1" secondAttribute="top" constant="-68" id="cfm-dF-owl"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="s7d-ym-4Te" secondAttribute="centerY" constant="-204" id="dB4-tT-fod"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="sah-zr-js1" secondAttribute="centerX" constant="96" id="dIG-50-ZVa"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="LPN-Ni-U0o" secondAttribute="centerY" constant="-204" id="dRT-S4-dkH"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="UfO-Zm-Wna" secondAttribute="centerY" constant="-136" id="dg3-uP-VhY"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Y6D-WG-UWn" secondAttribute="leading" id="dgT-dc-GyW"/>
+                            <constraint firstAttribute="centerY" secondItem="Lno-cN-VQw" secondAttribute="centerY" constant="-111" id="dsf-dA-vo5"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="fjL-Fk-fDE" secondAttribute="bottom" id="dtk-QV-9pf"/>
+                            <constraint firstAttribute="centerX" secondItem="SSr-g9-NA8" secondAttribute="centerX" constant="-67" id="dto-9x-ca7"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Mxj-cY-ZDE" secondAttribute="bottom" constant="-136" id="eM9-Vm-kx1"/>
+                            <constraint firstAttribute="centerX" secondItem="LPN-Ni-U0o" secondAttribute="centerX" constant="77" id="ePM-dj-LP7"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="XfJ-zk-IkW" secondAttribute="trailing" constant="48" id="eTg-eM-hSo"/>
+                            <constraint firstAttribute="centerY" secondItem="9hV-5G-Byt" secondAttribute="centerY" constant="93" id="eeR-TR-e0E"/>
+                            <constraint firstAttribute="centerX" secondItem="9hV-5G-Byt" secondAttribute="centerX" constant="29" id="eoS-B9-Hvi"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="sah-zr-js1" secondAttribute="trailing" constant="96" id="eph-g4-eem"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Bac-Ko-anV" secondAttribute="centerY" constant="68" id="f0L-6x-Wky"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="JfY-rO-boF" secondAttribute="trailing" id="f6k-ME-Q2e"/>
+                            <constraint firstAttribute="centerX" secondItem="nW8-qV-bht" secondAttribute="centerX" id="fsG-Xn-Kkq"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="qJe-i9-E9t" secondAttribute="top" constant="-68" id="g1V-n5-rva"/>
+                            <constraint firstAttribute="centerX" secondItem="qW3-KY-i2T" secondAttribute="centerX" constant="125" id="gTn-41-53x"/>
+                            <constraint firstAttribute="centerY" secondItem="JfY-rO-boF" secondAttribute="centerY" constant="-111" id="gdm-lA-6Yq"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="myg-UI-Yy3" secondAttribute="trailing" constant="-144" id="gon-3c-Yf1"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="AvV-hf-uVS" secondAttribute="trailing" constant="-48" id="h8I-Pd-rPb"/>
+                            <constraint firstAttribute="centerY" secondItem="s7d-ym-4Te" secondAttribute="centerY" constant="-111" id="hDE-Ag-KKO"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="fMV-h7-COA" secondAttribute="trailing" constant="-144" id="hL9-eM-fgw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="SV3-Ub-Ucv" secondAttribute="centerY" id="hYp-Ox-ryw"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="YmF-M5-qYE" secondAttribute="trailing" constant="-144" id="hYr-nt-xTc"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="9M8-nm-PsU" secondAttribute="bottom" constant="68" id="heh-oy-PaI"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="fMV-h7-COA" secondAttribute="top" constant="-204" id="ho9-ky-eBX"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="qJe-i9-E9t" secondAttribute="centerY" constant="-68" id="hxM-cv-TGE"/>
+                            <constraint firstAttribute="centerX" secondItem="koU-aE-GlB" secondAttribute="centerX" constant="77" id="i65-f4-TQy"/>
+                            <constraint firstAttribute="centerY" secondItem="D7S-OV-yYG" secondAttribute="centerY" constant="25" id="i9U-S7-FXK"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Lno-cN-VQw" secondAttribute="centerX" constant="-48" id="iLP-fF-a1D"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="fMV-h7-COA" secondAttribute="centerY" constant="-204" id="iur-SC-D4F"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="MYc-Xq-oAm" secondAttribute="centerY" constant="-136" id="jF5-5v-jBj"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="tGt-Lg-Zv7" secondAttribute="top" constant="-136" id="jKN-P3-fe2"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="tGt-Lg-Zv7" secondAttribute="centerY" constant="-136" id="jbh-P1-Kfv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="myg-UI-Yy3" secondAttribute="bottom" constant="-68" id="jkx-nD-H6u"/>
+                            <constraint firstAttribute="centerX" secondItem="Y6D-WG-UWn" secondAttribute="centerX" constant="29" id="jmZ-59-1kv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="fMV-h7-COA" secondAttribute="leading" constant="-144" id="jsH-KM-cAP"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="koU-aE-GlB" secondAttribute="centerX" constant="48" id="juM-7Z-PIg"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="tGt-Lg-Zv7" secondAttribute="bottom" constant="-136" id="k8n-50-4pu"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="LPN-Ni-U0o" secondAttribute="top" constant="-204" id="kWt-5C-1K6"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="Xq5-TT-2CN" secondAttribute="centerX" constant="-96" id="kpl-8R-9Li"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="fjL-Fk-fDE" secondAttribute="top" id="kqg-9A-fcm"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="KZr-vb-Z5e" secondAttribute="top" constant="-136" id="l4m-e1-bZh"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="qW3-KY-i2T" secondAttribute="leading" constant="96" id="lBE-id-99F"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="Y6D-WG-UWn" secondAttribute="top" constant="-68" id="lN1-TV-MmG"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="D7S-OV-yYG" secondAttribute="centerY" constant="-68" id="ljx-6C-h2z"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="MYc-Xq-oAm" secondAttribute="centerX" constant="-96" id="moh-v4-Q99"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="YmF-M5-qYE" secondAttribute="top" constant="68" id="n6o-9D-ng3"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Lno-cN-VQw" secondAttribute="bottom" constant="-204" id="nS4-te-dYu"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="SSr-g9-NA8" secondAttribute="leading" constant="-96" id="ncH-i9-vfa"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="trp-PL-YIA" secondAttribute="centerY" id="niT-d5-3Ha"/>
+                            <constraint firstAttribute="centerX" secondItem="myg-UI-Yy3" secondAttribute="centerX" constant="-115" id="nrp-Ol-ZaK"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="tGt-Lg-Zv7" secondAttribute="centerX" constant="96" id="nry-QG-6G3"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="myg-UI-Yy3" secondAttribute="top" constant="-68" id="o7J-of-8No"/>
+                            <constraint firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="125" id="oH6-Kg-hIx"/>
+                            <constraint firstAttribute="centerX" secondItem="s7d-ym-4Te" secondAttribute="centerX" constant="-67" id="oK4-NY-h43"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Xq5-TT-2CN" secondAttribute="centerY" constant="68" id="oQt-ZN-neC"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="fjL-Fk-fDE" secondAttribute="centerY" id="oRV-l0-faS"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="JfY-rO-boF" secondAttribute="leading" id="p73-ez-FzI"/>
+                            <constraint firstAttribute="centerY" secondItem="C3W-mc-gWb" secondAttribute="centerY" constant="-217" id="pXP-mI-8cx"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Zyg-2P-vcB" secondAttribute="bottom" constant="-136" id="pc0-Xh-sss"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="Bac-Ko-anV" secondAttribute="trailing" id="pj8-Yq-kes"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="Lno-cN-VQw" secondAttribute="leading" constant="-48" id="pvO-aR-Knb"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="qW3-KY-i2T" secondAttribute="centerX" constant="96" id="q71-2I-Inz"/>
+                            <constraint firstAttribute="centerX" secondItem="3LJ-eh-9Un" secondAttribute="centerX" constant="5" id="qWE-RW-Gr1"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="fMV-h7-COA" secondAttribute="bottom" constant="-204" id="qgL-01-YzR"/>
+                            <constraint firstAttribute="centerX" secondItem="qJe-i9-E9t" secondAttribute="centerX" constant="-19" id="qoF-Vo-cOK"/>
+                            <constraint firstAttribute="centerX" secondItem="sRi-Ti-Rc3" secondAttribute="centerX" constant="5" id="qyC-ke-Aog"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="MYc-Xq-oAm" secondAttribute="leading" constant="-96" id="r7S-VB-oTK"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="JfY-rO-boF" secondAttribute="top" constant="-204" id="rcc-4D-buJ"/>
+                            <constraint firstAttribute="centerY" secondItem="3LJ-eh-9Un" secondAttribute="centerY" constant="-263.5" id="rog-vd-S8p"/>
+                            <constraint firstAttribute="centerY" secondItem="UfO-Zm-Wna" secondAttribute="centerY" constant="-43" id="s7H-09-ThP"/>
+                            <constraint firstAttribute="centerY" secondItem="Mxj-cY-ZDE" secondAttribute="centerY" constant="-43" id="sAq-Xe-AgS"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="UfO-Zm-Wna" secondAttribute="top" constant="-136" id="thH-PE-VeC"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="SV3-Ub-Ucv" secondAttribute="bottom" id="uS7-ci-Mdn"/>
+                            <constraint firstAttribute="centerY" secondItem="AvV-hf-uVS" secondAttribute="centerY" constant="161" id="uc4-Bv-Z2C"/>
+                            <constraint firstAttribute="centerY" secondItem="DRq-DS-UX3" secondAttribute="centerY" constant="216" id="ujA-Nv-Dbk"/>
+                            <constraint firstAttribute="centerX" secondItem="Xq5-TT-2CN" secondAttribute="centerX" constant="-67" id="v5d-25-kFG"/>
+                            <constraint firstAttribute="centerY" secondItem="SV3-Ub-Ucv" secondAttribute="centerY" constant="93" id="vP3-je-SP8"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="tGt-Lg-Zv7" secondAttribute="trailing" constant="96" id="vmi-1m-lHx"/>
+                            <constraint firstAttribute="centerY" secondItem="trp-PL-YIA" secondAttribute="centerY" constant="93" id="vr0-ue-51Q"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="koU-aE-GlB" secondAttribute="centerY" id="xHd-vH-iQQ"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="bottom" secondItem="Y6D-WG-UWn" secondAttribute="bottom" constant="-68" id="xg7-Yx-02J"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="Mxj-cY-ZDE" secondAttribute="centerY" constant="-136" id="xsB-p1-xaz"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="leading" secondItem="LPN-Ni-U0o" secondAttribute="leading" constant="48" id="xtO-m6-EDQ"/>
+                            <constraint firstAttribute="centerX" secondItem="D7S-OV-yYG" secondAttribute="centerX" constant="77" id="y1N-fN-g5r"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="trailing" secondItem="qW3-KY-i2T" secondAttribute="trailing" constant="96" id="y5P-9Y-UN4"/>
+                            <constraint firstAttribute="centerY" secondItem="qW3-KY-i2T" secondAttribute="centerY" constant="-111" id="yQc-Yy-B4P"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="top" secondItem="koU-aE-GlB" secondAttribute="top" id="ymS-id-1xy"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="9M8-nm-PsU" secondAttribute="centerX" constant="96" id="z9e-Hr-caH"/>
+                            <constraint firstAttribute="centerX" secondItem="MYc-Xq-oAm" secondAttribute="centerX" constant="-67" id="zFq-Dw-Zf1"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerY" secondItem="SSr-g9-NA8" secondAttribute="centerY" constant="-68" id="zYt-Mm-Eoi"/>
+                            <constraint firstAttribute="centerX" secondItem="CfQ-fa-VIc" secondAttribute="centerX" constant="-67" id="zZi-aK-Rtv"/>
+                            <constraint firstItem="9hV-5G-Byt" firstAttribute="centerX" secondItem="CfQ-fa-VIc" secondAttribute="centerX" constant="-96" id="zh2-Db-3h0"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="CLi-GN-hu3"/>
-                                <exclude reference="Nja-W6-Eii"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="CLi-GN-hu3"/>
-                                <include reference="Nja-W6-Eii"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="flipsLabel" destination="4iL-Ho-t7I" id="YWt-RH-bK0"/>
+                        <outlet property="gameDescriptionLabel" destination="C3W-mc-gWb" id="yRk-4P-p0H"/>
+                        <outlet property="gameModeSegmentationControl" destination="DRq-DS-UX3" id="hi0-ZT-xe1"/>
+                        <outlet property="scoreLabel" destination="3LJ-eh-9Un" id="HaC-mQ-OJj"/>
+                        <outletCollection property="cardButtons" destination="9M8-nm-PsU" id="peJ-ts-yZe"/>
+                        <outletCollection property="cardButtons" destination="XfJ-zk-IkW" id="HQP-th-oKg"/>
+                        <outletCollection property="cardButtons" destination="Bac-Ko-anV" id="Fgh-8b-Ivz"/>
+                        <outletCollection property="cardButtons" destination="AvV-hf-uVS" id="d5e-iG-6dm"/>
+                        <outletCollection property="cardButtons" destination="Xq5-TT-2CN" id="I6V-Gu-CL9"/>
+                        <outletCollection property="cardButtons" destination="koU-aE-GlB" id="2IM-md-gtI"/>
+                        <outletCollection property="cardButtons" destination="trp-PL-YIA" id="uwL-tT-2lD"/>
+                        <outletCollection property="cardButtons" destination="9hV-5G-Byt" id="qqU-2f-khs"/>
+                        <outletCollection property="cardButtons" destination="fjL-Fk-fDE" id="XtK-z8-6WR"/>
+                        <outletCollection property="cardButtons" destination="CfQ-fa-VIc" id="Um1-cU-Gqy"/>
+                        <outletCollection property="cardButtons" destination="YmF-M5-qYE" id="9zv-5s-pRW"/>
+                        <outletCollection property="cardButtons" destination="SV3-Ub-Ucv" id="hED-LI-QRU"/>
+                        <outletCollection property="cardButtons" destination="sah-zr-js1" id="0o0-vf-E6t"/>
+                        <outletCollection property="cardButtons" destination="D7S-OV-yYG" id="Tau-u7-LtY"/>
+                        <outletCollection property="cardButtons" destination="Y6D-WG-UWn" id="zpZ-7q-bp9"/>
+                        <outletCollection property="cardButtons" destination="qJe-i9-E9t" id="mcO-ql-mAl"/>
+                        <outletCollection property="cardButtons" destination="SSr-g9-NA8" id="pe6-og-Twx"/>
+                        <outletCollection property="cardButtons" destination="myg-UI-Yy3" id="zS8-ds-Vdq"/>
+                        <outletCollection property="cardButtons" destination="tGt-Lg-Zv7" id="SjK-01-N46"/>
+                        <outletCollection property="cardButtons" destination="UfO-Zm-Wna" id="gjr-9L-E6I"/>
+                        <outletCollection property="cardButtons" destination="KZr-vb-Z5e" id="tlY-wu-uhX"/>
+                        <outletCollection property="cardButtons" destination="Zyg-2P-vcB" id="qn0-55-sX5"/>
+                        <outletCollection property="cardButtons" destination="MYc-Xq-oAm" id="pPM-Be-Cy9"/>
+                        <outletCollection property="cardButtons" destination="Mxj-cY-ZDE" id="MNq-EL-OK8"/>
+                        <outletCollection property="cardButtons" destination="qW3-KY-i2T" id="rtu-1p-Wfh"/>
+                        <outletCollection property="cardButtons" destination="LPN-Ni-U0o" id="kkC-gQ-CLk"/>
+                        <outletCollection property="cardButtons" destination="JfY-rO-boF" id="6fZ-oq-qpb"/>
+                        <outletCollection property="cardButtons" destination="Lno-cN-VQw" id="IHS-5N-Kpv"/>
+                        <outletCollection property="cardButtons" destination="s7d-ym-4Te" id="VU3-mV-JcE"/>
+                        <outletCollection property="cardButtons" destination="fMV-h7-COA" id="WHr-aZ-hB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="337" y="364"/>
+            <point key="canvasLocation" x="94" y="55"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cardfront" width="59" height="89"/>
+        <image name="cardback" width="64" height="96"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
